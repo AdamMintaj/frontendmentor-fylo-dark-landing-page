@@ -1,0 +1,121 @@
+.testimonials {
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .review {
+        background-color: #202A3C;
+        border-radius: 5px;
+        font-size: .75rem;
+        line-height: 2;
+        position: relative;
+        margin-bottom: .8rem;
+
+        &:first-of-type::before {
+            content: "";
+            background-image: url("../assets/bg-quotes.png");
+            display: block;
+            position: absolute;
+            height: 45px;
+            width: 55px;
+            top: -35px;
+            left: -10px;
+            z-index: -1;
+        }
+
+        &__content {
+            width: 85%;
+            margin: auto;
+            
+            p {
+                margin: 0;
+            }
+        }
+
+        &__text {
+            padding: 1rem 0;
+        }
+
+        &__id {
+            display: flex;
+            align-items: center;
+            padding-bottom: 1rem;
+        }
+
+        &__img {
+            height: 2.5rem;
+            border-radius: 50%;
+        }
+
+        &__name-tag {
+            margin-left: .5rem;
+
+            p:first-of-type {
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
+
+            p:nth-of-type(2) {
+                font-size: .6rem;
+            }
+        }
+    }
+
+    // landscape mode for mobiles
+    @media only screen and (orientation: landscape) and (max-height: 600px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+
+        .review {
+            width: 32%;
+        }
+    }
+
+    // larger mobiles and tablets
+    @media only screen and (orientation: portrait) and (min-width: 360px) {
+        justify-content: center;
+
+        .review {
+            font-size: .75rem;
+            margin: 1rem auto;
+
+            &__text {
+                padding: 1.5rem 0;
+            }
+
+            &__id {
+                padding-bottom: 1.5rem;
+            }
+        }
+    }
+
+    // desktop
+    @media only screen and (orientation: landscape) and (min-height: 601px) and (min-width: 800px) {
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+
+        .review {
+            margin-bottom: 0;
+            margin: 0 1rem;
+            font-size: .9rem;
+
+            &:first-of-type::before {
+                top: -40px;
+            }
+
+            &__text {
+                padding: 1.5rem 0;
+            }
+
+            &__id {
+                padding-bottom: 1.5rem;
+            }
+        }
+    }
+}

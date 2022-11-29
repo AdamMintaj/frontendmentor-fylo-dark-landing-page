@@ -1,0 +1,113 @@
+.presentation {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__figure {
+        margin: 0;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        
+        img
+        {
+            width: 100%;
+            max-width: 700px;
+        }
+    }
+
+    &__text {
+        text-align: left;
+        width: 90%;
+        margin: 0 auto;
+   
+        p:first-of-type {
+            font-family: "Raleway";
+            font-weight: bold;
+            line-height: 1.5;
+            font-size: 1.7rem;
+        }
+    
+        p:nth-of-type(2) {
+            line-height: 1.8;
+        }
+    }
+
+    &__demo {
+        display: inline-flex;
+        border-bottom: 1px solid #181F2A;
+        padding-bottom: 4px;
+        transition: .7s;
+        
+        svg {
+            margin: auto 0 auto 8px;
+            
+            #circle /*this is the svg icon*/
+            {
+                fill: white;
+            }
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: "Open sans";
+            
+        }
+
+        &:hover {
+            cursor: pointer;
+            color: #65E2D9;
+            border-bottom: 1px solid #65E2D9;
+
+            a {
+                color: #65E2D9;
+            }
+
+            svg {
+                cursor: pointer;
+
+                #circle {
+                    fill: #65E2D9;
+                }
+            }
+        }
+    }
+
+    // landscape mode for mobiles
+    @media only screen and (orientation: landscape) and (max-height: 600px) {
+        flex-direction: row;
+        font-size: 12px;
+
+        &__figure {
+            align-self: center;
+        }
+
+        &__text {
+            align-self: center;
+            padding: 1em;
+            p:first-of-type {
+                font-size: 1.7em;
+            }
+        }
+    }
+
+
+    //larger mobiles and tablets
+    @media only screen and (orientation: portrait) and (min-width: 360px) {
+        justify-content: space-evenly;
+    }
+
+    // desktop
+    @media only screen and (orientation: landscape) and (min-height: 601px) and (min-width: 800px) {
+        margin: 0 auto;
+        width: 85%;
+        flex-direction: row;
+        align-items: center;
+
+        &__text {
+            margin-left: 5%;
+        }
+    }
+}

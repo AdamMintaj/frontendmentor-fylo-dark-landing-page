@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title><%= htmlWebpackPlugin.options.title %></title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="scroll-snap-container">
+		<section id="intro" class="intro">
+			<header class="header">
+				<img id="img-tag-logo" class="header__img" alt="logo">
+				<nav class="header__nav">
+					<a class="header__link" href="#">Features</a>
+					<a class="header__link" href="#">Team</a>
+					<a class="header__link" href="#">Sign In</a>
+				</nav>
+			</header>
+
+			<figure class="intro__figure">
+				<img id="img-tag-illustration-intro" alt="illustration">
+			</figure>  
+			<div class="intro__text">
+				<p>All your files in one secure location, accessible anywhere.</p>
+				
+				<p>Fylo stores all your most important files in one secure location. Access them wherever 
+				you need, share and collaborate with friends family, and co-workers.</p>
+			</div>
+			<button class="intro__button">Get Started</button>
+		</section>
+
+		<section class="features">
+			<div class="features__feature-card">
+				<img class="features__img" id="img-tag-icon-access-anywhere" alt="illustration">
+				<div class="features__text">
+					<p>Access your files, anywhere</p>
+				
+					<p>The ability to use a smartphone, tablet, or computer to access your account means your 
+					files follow you everywhere.</p>
+				</div>
+			</div>
+			
+			<div class="features__feature-card">
+				<img class="features__img" id="img-tag-icon-security" alt="illustration" >
+				<div class="features__text">
+					<p>Security you can trust</p>
+				
+					<p>2-factor authentication and user-controlled encryption are just a couple of the security 
+					features we allow to help secure your files.</p>
+				</div>
+			</div>
+
+			<div class="features__feature-card">
+				<img class="features__img" id="img-tag-icon-collaboration" alt="illustration">
+				<div class="features__text">
+					<p>Real-time collaboration</p>
+					
+					<p>Securely share files and folders with friends, family and colleagues for live collaboration. 
+					No email attachments required.</p>
+				</div>
+			</div>
+
+			<div class="features__feature-card">
+				<img class="features__img" id="img-tag-icon-any-file" alt="illustration">
+				<div class="features__text">
+					<p>Store any type of file</p>
+					
+					<p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
+					file types to be securely stored and shared.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="presentation">
+			<figure class="presentation__figure">
+				<img id="img-tag-illustration-stay-productive" alt="illustration">
+			</figure>
+			<div class="presentation__text">
+				<p>Stay productive, wherever you are</p>
+				
+				<p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
+				storage needs.<br><br>
+				
+				Securely share files and folders with friends, family and colleagues for live collaboration. No email 
+				attachments required.</p>
+			
+				<div class="presentation__demo">
+					<a href="#">See how Fylo works</a>
+					<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><circle id="b" cx="6" cy="6" r="6"/><filter x="-25%" y="-25%" width="150%" height="150%" filterUnits="objectBoundingBox" id="a"><feOffset in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0.384313725 0 0 0 0 0.878431373 0 0 0 0 0.850980392 0 0 0 0.811141304 0" in="shadowBlurOuter1"/></filter></defs><g fill="none" fill-rule="evenodd"><g transform="translate(2 2)"><use fill="#000" filter="url(#a)" xlink:href="#b"/><use id="circle" fill="#62E0D9" xlink:href="#b"/></g><path d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z" fill="#1B2330"/></g>></svg>
+				</div>
+			</div>
+		</section>
+
+		<section class="testimonials">
+			<div class="review">
+				<div class="review__content">
+					<div class="review__text">
+						<p>
+							Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+							become a well-oiled collaboration machine.
+						</p>
+					</div>
+					
+					<div class="review__id">
+						<img id="img-tag-profile-1" class="review__img" alt="photo">
+						<div class="review__name-tag">
+							<p>Satish Patel</p>
+							<p>Founder & CEO, Huddle</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="review">
+				<div class="review__content">
+					<div class="review__text">
+						<p>
+							Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+							become a well-oiled collaboration machine.
+						</p>
+					</div>
+					
+					<div class="review__id">
+						<img id="img-tag-profile-2" class="review__img" alt="photo">
+						<div class="review__name-tag">
+							<p>Bruce McKenzie</p>
+							<p>Founder & CEO, Huddle</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="review">
+				<div class="review__content">
+					<div class="review__text">
+						<p>
+							Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+							become a well-oiled collaboration machine.
+						</p>
+					</div>
+					
+					<div class="review__id">
+						<img id="img-tag-profile-3" class="review__img" alt="photo">
+						<div class="review__name-tag">
+							<p>Iva Boyd</p>
+							<p>Founder & CEO, Huddle</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="CTA">
+			<div class="CTA__content">
+				<div class="CTA__text">
+					<p>Get early access today</p>
+					<p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+				</div>
+
+				<div class="CTA__sign-up">
+					<input id="email-address" type="email">
+					<button id="startbtn">Get Started For Free</button>
+				</div>
+			
+				<p id="alert"></p>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<figure class="footer__figure">
+				<img id="img-tag-logo-2" alt="logo">
+			</figure>
+
+			<div class="footer__location">
+				<img id="img-tag-icon-location" alt="location">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+					dolore magna aliqua
+				</p>
+			</div>
+		
+			<div class="footer__contact-info">
+				<img id="img-tag-icon-phone" alt="phone">
+				<p>+1-543-123-4567</p>
+				<img id="img-tag-icon-email" alt="email">
+				<p>example@fylo.com</p>
+			</div>
+
+			<div class="footer__about-us">
+				<p><a href="#">About Us</a></p>
+				<p><a href="#">Jobs</a></p>
+				<p><a href="#">Press</a></p>
+				<p><a href="#">Blog</a></p>
+			</div>
+
+			<div class="footer__contact-us">
+				<p><a href="#">Contact Us</a></p>
+				<p><a href="#">Terms</a></p>
+				<p><a href="#">Privacy</a></p>
+			</div>
+
+			<div class="footer__social-media">
+				<!-- This icon made by Freepik https://www.freepik.com , downloaded from www.flaticon.com -->
+				<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M452,0H60C26.916,0,0,26.916,0,60v392c0,33.084,26.916,60,60,60h392c33.084,0,60-26.916,60-60V60C512,26.916,485.084,0,452,0z M472,452c0,11.028-8.972,20-20,20H338V309h61.79L410,247h-72v-43c0-16.975,13.025-30,30-30h41v-62h-41c-50.923,0-91.978,41.25-91.978,92.174V247H216v62h60.022v163H60c-11.028,0-20-8.972-20-20V60c0-11.028,8.972-20,20-20h392c11.028,0,20,8.972,20,20V452z"/></g></g></svg>
+				<!-- This icon made by Dave Gandy, downloaded from www.flaticon.com -->
+				<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 438.536 438.536" style="enable-background:new 0 0 438.536 438.536;" xml:space="preserve"><g><path d="M414.41,24.123C398.333,8.042,378.963,0,356.315,0H82.228C59.58,0,40.21,8.042,24.126,24.123 C8.045,40.207,0.003,59.576,0.003,82.225v274.084c0,22.647,8.042,42.018,24.123,58.102c16.084,16.084,35.454,24.126,58.102,24.126 h274.084c22.648,0,42.018-8.042,58.095-24.126c16.084-16.084,24.126-35.454,24.126-58.102V82.225 C438.532,59.576,430.49,40.204,414.41,24.123z M335.471,168.735c0.191,1.713,0.288,4.278,0.288,7.71 c0,15.989-2.334,32.025-6.995,48.104c-4.661,16.087-11.8,31.504-21.416,46.254c-9.606,14.749-21.074,27.791-34.396,39.115 c-13.325,11.32-29.311,20.365-47.968,27.117c-18.648,6.762-38.637,10.143-59.953,10.143c-33.116,0-63.76-8.952-91.931-26.836 c4.568,0.568,9.329,0.855,14.275,0.855c27.6,0,52.439-8.565,74.519-25.7c-12.941-0.185-24.506-4.179-34.688-11.991 c-10.185-7.803-17.273-17.699-21.271-29.691c4.947,0.76,8.658,1.137,11.132,1.137c4.187,0,9.042-0.76,14.56-2.279 c-13.894-2.669-25.598-9.562-35.115-20.697c-9.519-11.136-14.277-23.84-14.277-38.114v-0.571 c10.085,4.755,19.602,7.229,28.549,7.422c-17.321-11.613-25.981-28.265-25.981-49.963c0-10.66,2.758-20.747,8.278-30.264 c15.035,18.464,33.311,33.213,54.816,44.252c21.507,11.038,44.54,17.227,69.092,18.558c-0.95-3.616-1.427-8.186-1.427-13.704 c0-16.562,5.853-30.692,17.56-42.399c11.703-11.706,25.837-17.561,42.394-17.561c17.515,0,32.079,6.283,43.688,18.846 c13.134-2.474,25.892-7.33,38.26-14.56c-4.757,14.652-13.613,25.788-26.55,33.402c12.368-1.716,23.88-4.95,34.537-9.708 C357.458,149.793,347.462,160.166,335.471,168.735z"/></g></svg>
+				<!-- This icon made by Pixel perfect, downloaded from www.flaticon.com -->
+				<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160 C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48 h192c61.76,0,112,50.24,112,112V352z"/></g></g><g><g><path d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128S326.688,128,256,128z M256,336c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80C336,300.096,300.096,336,256,336z"/></g></g><g><g><circle cx="393.6" cy="118.4" r="17.056"/></g></g></svg>
+			</div>
+
+			<div class="footer__frontendmentor">
+				<p>
+					Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+					Coded by <a href="https://github.com/AdamMintaj">Adam Mintaj</a>.
+				</p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

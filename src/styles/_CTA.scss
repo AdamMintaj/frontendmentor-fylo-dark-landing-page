@@ -1,0 +1,128 @@
+.CTA {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #0B1523, #0B1523);
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &__content {
+        width: 90%;
+        margin: 0 auto;
+        background-color: #1C2431;
+        border-radius: 15px;
+    }
+
+    &__text {
+        padding-top: 1rem;
+        width: 90%;
+        max-width: 720px;
+        margin: 0 auto;
+        text-align: center;
+   
+        p:first-of-type {
+            font-family: "Raleway";
+            font-weight: bold;
+            line-height: 1.5;
+            font-size: 1.7rem;
+        }
+
+        p:nth-of-type(2) {
+            line-height: 1.8;
+        }
+    }
+
+    &__sign-up {
+        width: 90%;
+        max-width: 360px;
+        margin: 0 auto;
+        padding: 1rem 0;
+
+        button {
+            width: 100%;
+            font-family: "Open sans";
+            font-weight: bold;
+            color: white;
+            background-image: linear-gradient(to right, #65E2D9, #339ECC);
+            border: 0;
+            height: 3rem;
+            border-radius: 50px;
+            margin: 0 auto;
+            display: block;
+            cursor: pointer;
+        }
+            
+        input {
+            border: 0;
+            height: 3rem;
+            width: 100%;
+            border-radius: 50px;
+            text-align: center;
+            margin-bottom: 1.5rem;
+
+            &:focus {
+                outline: 0;
+            }
+        }
+    }
+
+    #alert {
+        color: red;
+        margin: 0 auto;
+        width: 90%;
+        text-align: center;
+    }
+
+    // landscape mode for mobiles
+    @media only screen and (orientation: landscape) and (max-height: 600px) {
+        &__content {
+            font-size: 12px;
+        }
+    }
+
+    // larger mobiles and tablets
+    @media only screen and (orientation: portrait) and (min-width: 360px) {
+        &__content {
+            min-height: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+         
+        &__text {
+            width: 75%;
+        }
+    }
+
+    // desktop
+    @media only screen and (orientation: landscape) and (min-height: 601px) and (min-width: 800px) {
+        &__content {
+            width: 60%;
+        }
+    
+        &__sign-up {
+            max-width: none;
+            display: flex;
+            justify-content: space-evenly;
+
+            button {
+                width: 25%;
+                margin: 0;
+            }
+            
+            input {
+                width: 60%;
+                margin: 0;
+            }
+        }
+
+        #alert {
+            width: 80%;
+            height: 2.5rem;
+            text-align: left;
+        }
+    }
+}

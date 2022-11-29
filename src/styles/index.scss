@@ -1,0 +1,30 @@
+@use "intro";
+@use "features";
+@use "presentation";
+@use "testimonials";
+@use "CTA";
+@use "footer";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #181F2A;
+    color: white;
+    font-family: "Open sans";
+    height: 100%;
+}
+
+#scroll-snap-container {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    position: fixed;
+} 
