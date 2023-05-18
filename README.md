@@ -11,7 +11,7 @@ The challenge was to recreate a landing page from a provided design, nothing too
 ## How it went
 
 This is a challenge I actually completed a while ago but I wanted to remake it and try some new stuff with it. Thought it'd be cool to make it in form of 100vh pages with css scroll-snap, which turned out to work more or less fine, except in Chrome where it works so bad that it is practically unusable. This then led me down the hell-hole of looking for the right npm package and later further down to learning webpack, which I was completely unaware of before. All in all, I suffered a lot in the process but I guess I learned a lot too.
-I also tried to make the whole a bit more responsive than before, so the stylesheets may be a bit messy with some lines commented out and couple dead ends but in the end it's working. Whoever is curious about the outcome can look [here](https://frontendmentor-fylo-dark-landing-page-lktp4tdpw-adammintaj.vercel.app/) and whover is not may look [here](https://en.wikipedia.org/wiki/Banana).
+I also made the whole a bit more responsive than before. Whoever is curious about the outcome can look [here](https://frontendmentor-fylo-dark-landing-page-lktp4tdpw-adammintaj.vercel.app/) and whover is not may look [here](https://en.wikipedia.org/wiki/Banana).
 
 ## In case you're curious,
 
